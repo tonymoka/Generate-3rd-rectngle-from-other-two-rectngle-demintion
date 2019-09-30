@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+struct rectangle {
+	int hight;
+	int width;
+};
+
+rectangle calc1(rectangle z) {
+	cin >> z.hight >> z.width;
+	int calc = z.hight * z.width;
+		return z;
+}
+
+int main() {
+	rectangle rec1;
+	cin >> rec1.hight >> rec1.width;
+	int total = rec1.hight * rec1.width;
+			cout << "hight " << rec1.hight << " width " << rec1.width << " total "<< total << endl;
+
+			rectangle rec2;
+			cin >> rec2.hight >> rec2.width;
+			int total2 = rec2.hight * rec2.width;
+			cout << "hight " << rec2.hight << " width " << rec2.width << " total2 " <<total2 << endl;
+
+			rectangle rec3;
+			rec3.hight = rec1.hight + rec2.hight;
+			rec3.width = rec1.width + rec2.width;
+			int total3 = rec3.hight * rec3.width;
+			cout << "hight3 " << rec3.hight << " width " << rec3.width << " total " << total3 << endl;
+	return 0;
+}
